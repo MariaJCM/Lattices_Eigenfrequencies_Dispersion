@@ -1,4 +1,4 @@
-# Rectangular Lattice Dispersion Visualization (MATLAB)
+# Lattice Dispersion Visualization (MATLAB)
 
 This repository provides a MATLAB script for importing, analyzing, and visualizing the dynamic behavior of 2D rectangular lattice structures from Abaqus eigenfrequency analysis.
 
