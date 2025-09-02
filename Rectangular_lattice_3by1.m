@@ -136,7 +136,7 @@ for a=1:2:(NE-1)
 
 end
 
-% % % normale the frequencies if you want later to compare them with other lattices. 
+% % % normalize the frequencies if you want later to compare them with other lattices. 
 % % FNor=F.frequency5(31); %norm by y motion
 % % for a=1:1:NE;
 % %     F.(strcat('frequency',num2str(a)))=F.(strcat('frequency',num2str(a)))/FNor;
@@ -599,7 +599,7 @@ hold off
 thetalim([0 90])
 ax = gca; % current axes
 
-ax.FontSize = 18;%22
+ax.FontSize = 18;
 ax.GridAlpha = 0.5;
 ax.MinorGridAlpha = 0.5;
 title('\fontsize{14}RECTANGULAR Lattice : Group Velocity of longitudinal propagation in the X direction' )
