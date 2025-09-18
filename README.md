@@ -36,7 +36,7 @@ Use these files to test and reproduce the MATLAB analysis.
 
 **Note:** 
 
-The code and .rpt files provided correspond to the rectangular lattice illustrated in **Figure 6** of the journal article (see ## Citation) and to **Section 5.3.1** of the dissertation (## Further reading).
+The code and .rpt files provided correspond to the rectangular lattice illustrated in **Figure 6** of the journal article "Identifying elastic wave polarization and bandgaps in periodic solid media" and to **Section 5.3.1** of the dissertation "A Novel Method to Study the Dynamic Behavior of Lattice Structures".
 
 ## Further reading
 
