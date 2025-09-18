@@ -34,30 +34,24 @@ Example Abaqus output files are provided in [`example_data/`](example_data):
 
 Use these files to test and reproduce the MATLAB analysis.
 
-**Note:**  
-The code and `.rpt` files provided correspond to the rectangular lattice illustrated in **Figure 6** of the journal article:
+**Note**  
+The code and `.rpt` files provided correspond to the rectangular lattice illustrated in **Figure 6** of the journal article below.
 
 > Carrillo-Munoz, Maria, and Bhisham Sharma.  
-> "Identifying elastic wave polarization and bandgaps in periodic solid media."  
+> “Identifying elastic wave polarization and bandgaps in periodic solid media.”  
 > *International Journal of Mechanical Sciences* 252 (2023): 108363.
 
-and to **Section 5.3.1** of the dissertation:
+## Further reading
 
-> _"A Novel Method to Study the Dynamic Behavior of Lattice Structures."_  
-> PhD Dissertation, Wichita State University, 2023.
+For additional background and methodology details, see the dissertation:
 
-
-## Further Reading
-
-For additional background and a detailed description of the methodology, see the Dissertation work:
-
-- Carrillo-Munoz, Maria J. "A Novel Method to Study the Dynamic Behavior of Lattice Structures." PhD diss., Wichita State University, 2023. https://soar.wichita.edu/server/api/core/bitstreams/02df9974-b461-4e1e-b055-70390e7482d9/content
+- Carrillo-Munoz, Maria J. *A Novel Method to Study the Dynamic Behavior of Lattice Structures.* PhD Dissertation, Wichita State University, 2023. https://soar.wichita.edu/server/api/core/bitstreams/02df9974-b461-4e1e-b055-70390e7482d9/content
 
 ## Citation
 
 If you use this code or method, please cite:
 
-- Carrillo-Munoz, Maria, and Bhisham Sharma. "Identifying elastic wave polarization and bandgaps in periodic solid media." *International Journal of Mechanical Sciences* 252 (2023): 108363. https://www.sciencedirect.com/science/article/pii/S0020740323002655
+- Carrillo-Munoz, Maria, and Bhisham Sharma. “Identifying elastic wave polarization and bandgaps in periodic solid media.” *International Journal of Mechanical Sciences* 252 (2023): 108363. https://www.sciencedirect.com/science/article/pii/S0020740323002655
 
 ## License
 
