@@ -34,11 +34,16 @@ Example Abaqus output files are provided in [`example_data/`](example_data):
 
 Use these files to test and reproduce the MATLAB analysis.
 
+## Further Reading
+
+For additional background and a detailed description of the methodology, see the Dissertation work:
+
+- Carrillo-Munoz, Maria J. "A Novel Method to Study the Dynamic Behavior of Lattice Structures." PhD diss., Wichita State University, 2023. https://soar.wichita.edu/server/api/core/bitstreams/02df9974-b461-4e1e-b055-70390e7482d9/content
+
 ## Citation
 
 If you use this code or method, please cite:
 
-- Carrillo-Munoz, Maria J. "A Novel Method to Study the Dynamic Behavior of Lattice Structures." PhD diss., Wichita State University, 2023.
 - Carrillo-Munoz, Maria, and Bhisham Sharma. "Identifying elastic wave polarization and bandgaps in periodic solid media." *International Journal of Mechanical Sciences* 252 (2023): 108363.
 
 ## License
