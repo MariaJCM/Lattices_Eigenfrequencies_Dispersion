@@ -1,32 +1,32 @@
 # Lattice Dispersion Visualization (MATLAB)
 This repository provides a MATLAB script for importing, analyzing, and visualizing the dynamic behavior of 2D rectangular lattice structures from Abaqus eigenfrequency analysis.
 
-## Generating the `.rpt`/text files (Abaqus & COMSOL)
-You may create the required input files either directly from **Abaqus** (`.rpt`) or export **plain-text/CSV** from **COMSOL** and save/rename it as `.rpt`. The key is consistency across all k-points and files. Depending on boundary conditions (e.g., constrained DOFs), some quantities may be absent—include whatever is available, but keep headers, units, and ordering consistent.
+## Generating input files (.rpt /.txt /.csv) from Abaqus or COMSOL
+
+You can create the required input as **plain-text tables** from either **Abaqus** (e.g., `.rpt`, `.txt`) or **COMSOL** (e.g., `.txt`, `.csv`). The script only needs your **eigenfrequencies** and, when available, the **effective mass components** (translation and/or rotation) for the **DOFs active in your model**. If your export uses different header names or column order, simply identify/match them in the MATLAB script (straightforward mapping).
 
 ### Minimum content & formatting
-- Eigenfrequency results **per mode** at each **k-point**.  
+- Eigenfrequency results **per mode** at each **k-point**.
 - A consistent **k-point ordering**:  
   - **PATH** file: concatenate k-points along the chosen high-symmetry path.  
-  - **GRID** file: k-points laid out on a uniform `(kx, ky)` grid (any consistent row/column order is fine).  
-- Plain-text with a stable delimiter (space/CSV) and a repeatable header.  
-- Units kept consistent across files (e.g., frequency in Hz; wave-vector components in 1/m if included).  
-- Optional additional dynamic quantities (e.g., generalized/effective masses, participation factors) may be included when available.
+  - **GRID** file: k-points laid out on a uniform `(kx, ky)` grid (any consistent row/column order is fine).
+- Plain-text with a stable delimiter (space/CSV) and a repeatable header.
+- Units kept consistent across files (e.g., frequency in Hz; wave-vector components in 1/m if included).
+- Optional additional dynamic quantities (e.g., generalized/effective masses, participation factors) may be included when available; if some DOFs are constrained those columns may be absent.
 
 ### Abaqus (concise workflow)
-1. Run the **eigenfrequency** step(s) for each k-point (e.g., Bloch/Floquet periodic conditions on the unit cell).
-2. In **Visualization**, create **XY Data from History Output** for the k-point step and select the results you wish to export (at minimum, eigenfrequencies; optionally other dynamic quantities if present).
-3. Use **Report → XY…** to write a **single** `.rpt` file per case:  
-   - `abaqus_Frequencies_PATH.rpt` for the path sweep.  
-   - `abaqus_Frequencies_GRID.rpt` for the grid sweep.  
-   Ensure the same column order across all k-points.
+1. Run the **eigenfrequency** step(s) for each k-point (e.g., Bloch/Floquet periodic conditions).
+2. In **Visualization**, create **XY Data from History Output** for the k-point step and select the results you wish to export (at minimum, eigenfrequencies; optionally other quantities if present).
+3. Use **Report → XY…** to write a **single text report** per case (commonly `.rpt`; plain text).  
+   Save as `Frequencies_PATH.rpt` (path sweep) or `Frequencies_GRID.rpt` (grid sweep).  
+   Keep the **same column order** across all k-points.  
+   *(Scripting via the Abaqus Python API can also write directly to text/CSV if you prefer.)*
 
 ### COMSOL (concise workflow)
-1. Set up an **Eigenfrequency** study on the unit cell with **Floquet periodicity** and sweep either a **path** in k-space or a **(kx, ky)** grid.
-2. Create a **Table** containing eigenfrequencies (and any other available/global measures you wish to include).
-3. **Export → Data** the Table as **space-delimited text** or **CSV**, keep consistent headers/units, and save (or rename) as:  
-   - `abaqus_Frequencies_PATH.rpt` for the path sweep.  
-   - `abaqus_Frequencies_GRID.rpt` for the grid sweep.
+1. Set up an **Eigenfrequency** study with **Floquet periodicity** and sweep a **path** in k-space or a **(kx, ky)** grid.
+2. Create a **Table** containing eigenfrequencies (and any available/global measures you want to include).
+3. **Export → Data** the table as **space-delimited text** or **CSV**, keep headers/units consistent, and save (or rename) as:  
+   `Frequencies_PATH.rpt` (path) or `Frequencies_GRID.rpt` (grid).
 
 ---
 
