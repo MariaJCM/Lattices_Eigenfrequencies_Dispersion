@@ -42,7 +42,7 @@ The code and .rpt files provided correspond to the rectangular lattice illustrat
 
 For additional background and methodology details, see the dissertation:
 
-- Carrillo-Munoz, Maria J. *A Novel Method to Study the Dynamic Behavior of Lattice Structures.* PhD Dissertation, Wichita State University, 2023. https://soar.wichita.edu/server/api/core/bitstreams/02df9974-b461-4e1e-b055-70390e7482d9/content
+- Carrillo-Munoz, Maria J. "A Novel Method to Study the Dynamic Behavior of Lattice Structures." PhD Dissertation, Wichita State University, 2023. https://soar.wichita.edu/server/api/core/bitstreams/02df9974-b461-4e1e-b055-70390e7482d9/content
 
 ## Citation
 
