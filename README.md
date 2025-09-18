@@ -36,9 +36,7 @@ Use these files to test and reproduce the MATLAB analysis.
 
 **Note:** 
 
-The code and .rpt files provided correspond to the rectangular lattice illustrated in **Figure 6** of the journal article: 
-
-Carrillo-Munoz, Maria, and Bhisham Sharma. > "Identifying elastic wave polarization and bandgaps in periodic solid media." > *International Journal of Mechanical Sciences* 252 (2023): 108363. and to **Section 5.3.1** of the dissertation: > _"A Novel Method to Study the Dynamic Behavior of Lattice Structures."_ > PhD Dissertation, Wichita State University, 2023.
+The code and .rpt files provided correspond to the rectangular lattice illustrated in **Figure 6** of the journal article and to **Section 5.3.1** of the dissertation.
 
 ## Further reading
 
