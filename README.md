@@ -36,7 +36,7 @@ Use these files to test and reproduce the MATLAB analysis.
 
 **Note:** 
 
-The code and .rpt files provided correspond to the rectangular lattice illustrated in **Figure 6** of the journal article and to **Section 5.3.1** of the dissertation.
+The code and .rpt files provided correspond to the rectangular lattice illustrated in **Figure 6** of the journal article (see ## Citation) and to **Section 5.3.1** of the dissertation (## Further reading).
 
 ## Further reading
 
