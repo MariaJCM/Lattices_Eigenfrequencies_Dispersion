@@ -3,7 +3,7 @@ This repository provides a MATLAB script for importing, analyzing, and visualizi
 
 ## Generating input files (.rpt /.txt /.csv) from Abaqus or COMSOL
 
-You can create the required input as **plain-text tables** from either **Abaqus** (e.g., `.rpt`, `.txt`) or **COMSOL** (e.g., `.txt`, `.csv`). The script only needs your **eigenfrequencies** and, when available, the **effective mass components** (translation and/or rotation) for the **DOFs active in your model**. If your export uses different header names or column order, simply identify/match them in the MATLAB script (straightforward mapping).
+You can create the required input as **plain-text tables** from either **Abaqus** (e.g., `.rpt`, `.txt`) or **COMSOL** (e.g., `.txt`, `.csv`). The script only needs your **eigenfrequencies** and, the **effective mass components** (translation and/or rotation) for the **DOFs active in your model**. If your export uses different header names or column order, simply identify/match them in the MATLAB script (straightforward mapping).
 
 ### Minimum content & formatting
 - Eigenfrequency results **per mode** at each **k-point**.
