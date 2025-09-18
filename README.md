@@ -18,7 +18,7 @@ This repository provides a MATLAB script for importing, analyzing, and visualizi
    Place these files in the `example_data/` folder.
 
 2. **Edit File Paths (if needed):**  
-   - In the script, set the paths to your local `.rpt` files if different.
+   - In the script, set the paths to your local `.rpt` files.
 
 3. **Run the Script:**  
    - Open `Rectangular_lattice_3by1.m` in MATLAB and run it.
