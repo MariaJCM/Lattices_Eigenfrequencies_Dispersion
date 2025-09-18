@@ -44,7 +44,7 @@ For additional background and a detailed description of the methodology, see the
 
 If you use this code or method, please cite:
 
-- Carrillo-Munoz, Maria, and Bhisham Sharma. "Identifying elastic wave polarization and bandgaps in periodic solid media." *International Journal of Mechanical Sciences* 252 (2023): 108363.
+- Carrillo-Munoz, Maria, and Bhisham Sharma. "Identifying elastic wave polarization and bandgaps in periodic solid media." *International Journal of Mechanical Sciences* 252 (2023): 108363. https://www.sciencedirect.com/science/article/pii/S0020740323002655
 
 ## License
 
