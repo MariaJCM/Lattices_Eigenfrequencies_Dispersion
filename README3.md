@@ -3,7 +3,7 @@ This repository provides a MATLAB script for importing, analyzing, and visualizi
 
 ## Generating input files (.rpt /.txt /.csv) from Abaqus or COMSOL
 
-You can create the required input as **plain-text tables** from either **Abaqus** (e.g., `.rpt`, `.txt`) or **COMSOL** (e.g., `.txt`, `.csv`). The script only needs your **eigenfrequencies** and, the **effective mass components** (translation and/or rotation) for the **DOFs active in your model**. If your export uses different header names or column order, simply identify/match them in the MATLAB script (straightforward mapping).
+You can create the required input as **plain-text tables** from either **Abaqus** (e.g., `.rpt`, `.txt`) or **COMSOL** (e.g., `.txt`, `.csv`). The script only needs your **eigenfrequencies** and, the **effective mass components** (translation and/or rotation) for the **DOFs active in your model**. If your export uses different header names or column order, simply identify/match them in the MATLAB script.
 
 ### Minimum content & formatting
 - Eigenfrequency results **per mode** at each **k-point**.
@@ -14,7 +14,7 @@ You can create the required input as **plain-text tables** from either **Abaqus*
 - Units kept consistent across files (e.g., frequency in Hz; wave-vector components in 1/m if included).
 - Optional additional dynamic quantities (e.g., generalized/effective masses, participation factors) may be included when available; if some DOFs are constrained those columns may be absent.
 
-### Abaqus (concise workflow)
+### Abaqus workflow
 1. Run the **eigenfrequency** step(s) for each k-point (e.g., Bloch/Floquet periodic conditions).
 2. In **Visualization**, create **XY Data from History Output** for the k-point step and select the results you wish to export (at minimum, eigenfrequencies; optionally other quantities if present).
 3. Use **Report → XY…** to write a **single text report** per case (commonly `.rpt`; plain text).  
@@ -22,7 +22,7 @@ You can create the required input as **plain-text tables** from either **Abaqus*
    Keep the **same column order** across all k-points.  
    *(Scripting via the Abaqus Python API can also write directly to text/CSV if you prefer.)*
 
-### COMSOL (concise workflow)
+### COMSOL workflow
 1. Set up an **Eigenfrequency** study with **Floquet periodicity** and sweep a **path** in k-space or a **(kx, ky)** grid.
 2. Create a **Table** containing eigenfrequencies (and any available/global measures you want to include).
 3. **Export → Data** the table as **space-delimited text** or **CSV**, keep headers/units consistent, and save (or rename) as:  
