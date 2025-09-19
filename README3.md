@@ -9,10 +9,8 @@ You can create the required input as **plain-text tables** from either **Abaqus*
 - Eigenfrequency results **per mode** at each **k-point**.
 - A consistent **k-point ordering**:  
   - **PATH** file: concatenate k-points along the chosen high-symmetry path.  
-  - **GRID** file: k-points laid out on a uniform `(kx, ky)` grid (any consistent row/column order is fine).
-- Plain-text with a stable delimiter (space/CSV) and a repeatable header.
-- Units kept consistent across files (e.g., frequency in Hz; wave-vector components in 1/m if included).
-- Optional additional dynamic quantities (e.g., generalized/effective masses, participation factors) may be included when available; if some DOFs are constrained those columns may be absent.
+  - **GRID** file: k-points laid out on a uniform `(kx, ky)` grid (if you want to study the complete Irreduzible Brillouin Zone).
+- Generalized/effective masses, participation factors.
 
 ### Abaqus workflow
 1. Run the **eigenfrequency** step(s) for each k-point (e.g., Bloch/Floquet periodic conditions).
@@ -20,19 +18,19 @@ You can create the required input as **plain-text tables** from either **Abaqus*
 3. Use **Report → XY…** to write a **single text report** per case (commonly `.rpt`; plain text).  
    Save as `Frequencies_PATH.rpt` (path sweep) or `Frequencies_GRID.rpt` (grid sweep).  
    Keep the **same column order** across all k-points.  
-   *(Scripting via the Abaqus Python API can also write directly to text/CSV if you prefer.)*
+   *(Scripting via the Abaqus Python API can also write directly to txt/CSV if you prefer.)*
 
 ### COMSOL workflow
 1. Set up an **Eigenfrequency** study with **Floquet periodicity** and sweep a **path** in k-space or a **(kx, ky)** grid.
-2. Create a **Table** containing eigenfrequencies (and any available/global measures you want to include).
-3. **Export → Data** the table as **space-delimited text** or **CSV**, keep headers/units consistent, and save (or rename) as:  
+2. Create a **Table** containing eigenfrequencies and the measures you want to include.
+3. **Export → Data** the table as **space-delimited text** or **CSV**, keep headers, and save (or rename) as:  
    `Frequencies_PATH.rpt` (path) or `Frequencies_GRID.rpt` (grid).
 
 ---
 
 ## Main features:
 - **Path Analysis:** Frequency dispersion curves along high-symmetry paths in the Brillouin Zone (using `abaqus_Frequencies_PATH.rpt`).
-- **Grid Analysis:** 3D dispersion surfaces over a grid of wave vectors (kx, ky) (using `abaqus_Frequencies_GRID.rpt`).
+- **Grid Analysis:** Frequency dispersion surfaces over a grid of wave vectors (kx, ky) (using `abaqus_Frequencies_GRID.rpt`).
 - **Polarization Visualization:** Effective mass data for translation & rotation modes.
 - **Group Velocity Analysis:** Direction and speed of energy propagation.
 
