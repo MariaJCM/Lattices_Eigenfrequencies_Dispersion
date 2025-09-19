@@ -34,9 +34,9 @@ You can create the required input as **plain-text tables** from either **Abaqus*
 - **Polarization Visualization:** Effective mass data for translation & rotation modes.
 - **Group Velocity Analysis:** Direction and speed of energy propagation.
 
-## Getting Started
+## Getting Started (example generated in Abaqus)
 **Prepare Abaqus Output Files:**  
-Export eigenfrequency data (including effective mass and rotational mass) as `.rpt` files.  
+Export eigenfrequency data (including effective translational and rotational mass) as `.rpt` files.  
 Required files:
 - `abaqus_Frequencies_PATH.rpt` (for boundary/path analysis)
 - `abaqus_Frequencies_GRID.rpt` (for full IBZ grid analysis)  
