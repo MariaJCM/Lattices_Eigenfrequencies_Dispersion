@@ -43,7 +43,7 @@ Required files:
 Place these files in the `example_data/` folder.
 
 **Edit File Paths (if needed):**  
-In the script, set the paths to your local `.rpt` files if different.
+In the script, set the paths to your local `.rpt` files.
 
 **Run the Script:**  
 Open `Rectangular_lattice_3by1.m` in MATLAB and run it.
