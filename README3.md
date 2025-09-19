@@ -49,7 +49,7 @@ In the script, set the paths to your local `.rpt` files.
 Open `Rectangular_lattice_3by1.m` in MATLAB and run it.
 
 **Customize & Extend:**  
-All code is commented for easy extension (e.g., different lattice geometries, advanced plots).
+All code is commented and can be used for different lattice geometries and IBZs.
 
 ## Example Data
 Example Abaqus output files are provided in `example_data/`:
