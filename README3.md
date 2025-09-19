@@ -23,8 +23,8 @@ You can create the required input as **plain-text tables** from either **Abaqus*
 ### COMSOL workflow
 1. Set up an **Eigenfrequency** study with **Floquet periodicity** and sweep a **path** in k-space or a **(kx, ky)** grid.
 2. Create a **Table** containing eigenfrequencies and the measures you want to include.
-3. **Export → Data** the table as **space-delimited text** or **CSV**, keep headers, and save (or rename) as:  
-   `Frequencies_PATH.rpt` (path) or `Frequencies_GRID.rpt` (grid).
+3. **Export → Data** the table as **space-delimited text** or **CSV**, keep headers, and save:  
+   `Frequencies_PATH.csv` (path) or `Frequencies_GRID.csv` (grid).
 
 ---
 
